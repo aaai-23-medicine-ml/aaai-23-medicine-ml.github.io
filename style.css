@@ -292,7 +292,7 @@ ul.inline li a, ul.inline li a:active, ul.inline li a:visited{
 
 /* -- article styles -- */
 .article {
-  margin-left: 210px;
+  margin-left: 180px;
   margin-right: 30px;
   padding: 0;
   line-height: 1.50em;
@@ -404,7 +404,7 @@ pre, pre.code {
   margin: 10px 0 0 0;
   padding: 0;
   float: left;
-  width: 200px;
+  width: 170px;
   font-size: 10pt;
 }
 .sidebar div { line-height: 12pt; margin-bottom: 15px; }
