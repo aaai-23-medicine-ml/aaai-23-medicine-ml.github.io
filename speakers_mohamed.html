@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title> AAAI-23 Bridge Program:  </title>
+  Bridge between Medicine and Machine Learning.
+  <meta name="robots" content="index,follow" />
+  <link rel="stylesheet" type="text/css" href="fonts.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="jquery.js"></script>
+  <script src="bootstrap.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" id="about">
+<div class='content'>
+
+    <div class='title'>
+      <a href="index.html"><strong>AAAI-23 Bridge Program: <br/></strong> 
+         Bridge between Medicine and Machine Learning </a>
+    </div>
+
+    <div class="band">
+    <a class="band" class="thumb"><img src=imgs/brain_mri.png></a>
+    <a class="band" class="thumb"><img src=imgs/chest-x-rays.png></a>
+    <a class="band" class="thumb"><img src=imgs/scanner.png></a>
+    <a class="band" class="thumb"><img src=imgs/ct.png></a>
+    </div>
+
+
+<div class='article'>
+
+
+<h2 id="schedule">Speakers </h2>
+
+<b> Deep learning approaches for tumor auto-segmentation and progression free survival prediction for oropharyngeal cancers patients using pretreatment PET/CT images and clinical data (2021 HECKTOR Challenge)
+ </b> </br> 
+
+Naser Mohamed PhD </br>
+The University of Texas MD Anderson Cancer Center: Houston, Texas, US
+</br>
+
+</br>
+Abstract: </br>
+Head and neck cancer (HNC) afflicts a significant proportion of US citizens every year with a remarkable increase in oropharyngeal cancers (OPC) cases primarily due to increased human papillomavirus (HPV) infection rates. Radiotherapy (RT) is a main component for OPC as a primary or auxiliary treatment. Tumor segmentation is a key component in RT planning, but it is a labor intensive and suffers from interobserver variability. Auto-segmentation of primary tumors in OPC using pretreatment PET/CT images is an unmet need that has the potential to improve RT workflows. Also, predicting oncologic outcomes such as progression-free survival (PFS) for OPC using pretreatment PET/CT and clinical data is a challenging but pertinent task that could help stratify patients for improved overall outcomes through adaptive RT and post-treatment follow-up and treatment intervention.
+</br> 
+In this work, we developed deep learning (DL) models based on a 3D Residual Unet (ResUnet) and DenseNet architectures that can auto-segment primary tumors and predict PFS in OPC patients, respectively. For models training and validation, we used a large-scale dataset that includes baseline clinical data and pretreatment PET/CT images of OPC patients (training size = 224 patients, testing size = 101 patients) as part of the 2021 HECKTOR Challenge. For tumor auto-segmentation, we used PET/CT images as two inputs channels to the ResUnet and we implemented 10-fold cross-validation with label fusion ensemble approaches, including Simultaneous Truth and Performance Level Estimation (STAPLE) and a voxel-level threshold approach based on majority voting (AVERAGE), to generate consensus segmentations on the test data by combining the segmentations produced through different trained cross-validation models. We demonstrated that our best performing ensembling approach achieved a mean dice similarity coefficient (DSC) of 0.770 and median 95% hausdorff distance (HD) of 3.143 mm on the test set. Our DSC and 95% HD test results are within 0.01 and 0.06 mm of the top ranked model in the competition, respectively.
+ </br>
+For PFS prediction, the DenseNet model used PET images, CT images, primary tumor segmentation masks, and clinical data as separate channels to predict PFS. In the model development, we implemented 10-fold cross-validation and we used ensemble approaches applied to cross-validation folds which yield C-index values up to 0.698 in the test set, leading to a 1st place ranking on the competition leaderboard.
+ </br>
+These promising results of DL-based approaches for tumor auto-segmentation and PFS prediction using pretreatment imaging and clinical data highlight the utility of DL pipelines for improving RT workflows and clinical outcome prediction in OPC.
+
+
+
+</br>
+Bio: </br>
+1)	Dr. Naser is Instructor in the Department of Radiation Oncology, the University of Texas MD Anderson Cancer Center. Dr. Naser has a recognized portfolio as junior faculty with an exceptional track record and high impact publications at the interface of imaging and data science. Dr. Naser has a unique background in Engineering Physics, Medical Physics, and Artificial Intelligence (AI) with research interest in developing advanced deep learning approaches for automated segmentation of normal tissues and target volumes, to reduce uncertainties in radiotherapy treatment planning, and predictions of treatment-associated oncologic outcomes and normal tissue injury to aid for clinical decisions regarding treatment planning and personalized therapy. Dr. Naser received his PhD from McMaster University, Hamilton, Canada in Engineering Physics and his postdoctoral research focus was on developing model-based approaches for quantitative biomedical optics and photoacoustic imaging for molecular and functional imaging in small animal models for pre-clinical applications.
+
+</div> <!-- end of div article -->
+
+</div> <!-- end of div content -->
+
+</body>
+
+</html>
+
